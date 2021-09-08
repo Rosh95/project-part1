@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Italic.eot');
+    src: local('TT Lakes Italic'), local('TTLakes-Italic'),
+        url('../fonts/TTLakes-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Italic.woff') format('woff'),
+        url('../fonts/TTLakes-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    box-sizing: border-box;
+ };
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    font-size: 14px;
+    font-family: TT Lakes;
+    font-style: normal;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background: #F8F8F8;
+    margin-left: -10px;
+}
+
+.header {
+    border-bottom: 1px solid #D9FFF5;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.header__container{
+display: flex;   
+justify-content: space-around;
+align-items: center;
+background: #FFFFFF;
+padding: auto 16px;
+margin: 24px 16px;}
+
+
+.header__container--divider{
+padding: auto 0px;
+height: 32px;
+width: 2px;
+background: #EAEAEA;
+border-radius: 1px;
+}
+
+.company--name{
+    font-family: TT Lakes;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin: 24px 16px 24px 0;
+}
+
+.name-container{
+    display: flex;
+}
+
+.name-container__highlight{
+    background: #41F6D7;
+    width: 4px;
+    height: 40px;
+    border-radius: 0 50% 50% 0;
+    margin:auto 12px auto 0px;
+    
+}
+
+.menu__container{
+    display: flex;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.menu--items{
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    white-space: nowrap;
+    margin: auto 16px;
+}
+
+.menu--items:first-of-type{
+background: #FFFFFF;
+border: 2px solid #B8FFEC;
+box-sizing: border-box;
+border-radius: 6px;
+padding: 8px 9px 8px 16px;
+}
+
+.first-block{
+    margin: 0 36px 0 16px;
+    padding-top: 0px;
+
+}
+
+.first-block--description{
+font-family: TT Lakes;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.2px;
+color: #1B1C21;
+}
+
+.continue-text img {
+    background: #7E7E82;
+    
+
+}
+.continue-text{
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    margin-bottom: 20px;
+}
