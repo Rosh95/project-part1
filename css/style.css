@@ -135,11 +135,16 @@ border-radius: 6px;
 padding: 8px 9px 8px 16px;
 }
 
+.menu--items:first-of-type{
+    display: none;
+}
+
 .first-block{
     margin: 0 36px 16px 16px;
     padding-top: 0px;
 
 }
+
 
 
 .first-block--description--part-1{
@@ -218,22 +223,26 @@ color: #1B1C21;
 .header__container {
     justify-content: space-between;}
 
+.first-block__container{
+    padding-top: 20px;
+    line-height: 20px;
+}
+
 .first-block{
     display: inline-block;
-    width: 50%;
+    width: 40%;
+    vertical-align: top;
 }
 .menu{
     margin-bottom: 10px;
 }
 
-.continue-text {
-    display: inline-flex;
-    width: 40%;
-}
+
 .company-img{
     margin-top: 20px;
     display: inline-block;
-    width: 40%;
+    width: 50%;
+    justify-content: flex-end;
 }
 }
 
@@ -244,4 +253,46 @@ color: #1B1C21;
     .first-block--description--part-3{
         display: inline;
     }
+
+    .menu--items:first-of-type{
+        display: inline;
+    }
+
+    .menu__container{
+        flex-wrap: wrap;
+    }
+
+    .name-container__part-2{
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .icon-description{
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.20000000298023224px;
+        text-align: left;
+
+    }
+
+    .name-container{
+        justify-content: space-between;
+    }
+
+    .first-block{
+        display: inline-block;
+        width: 40%;
+        vertical-align: top;
+    }
+
+    .company-img{
+        margin-top: 20px;
+        display: inline-block;
+        width: 55%;
+        justify-content: flex-end;
+    }
+
+
+
 }
