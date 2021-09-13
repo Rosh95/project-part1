@@ -293,6 +293,9 @@ color: #1B1C21;
         justify-content: flex-end;
     }
 
+    .name-container__part-2 .header__container--item:first-of-type{
+        margin-right: 32px;
+    }
 
 
 }
