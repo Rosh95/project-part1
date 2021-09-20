@@ -22,52 +22,41 @@ main{
 }
 
 
-
 button {
     background: transparent;
     border: none !important;
+    padding: 0px;
 }
 
 .header__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #FFFFFF;
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
 
 }
 
-.header__container--logo{
+.header__container__logo{
     border-radius: 50%;
 }
-.header__container--inner-1 {
-    display: flex;
-    justify-content: space-around;
-}
 
-.header__container--inner-2 {
+.header__container__items--left,
+.header__container__items--right{
     display: flex;
 }
 
-.header__container--inner-2-part-1 {
+.invisible{
     display: none;
 }
-
-.header__container--inner-2-part-2 {
-    display: flex;
+.header__container__item{
+    margin-right: 16px;
 }
-
-.first-divider{
-    display: none;
-}
-.header__container--item:first-of-type{
+.header__container__item:first-of-type{
     margin-left: 16px;
 }
 
-.header__container--item:last-of-type{
-    margin-right: 16px;
-}
-.header__container--divider{
+.header__container__divider{
     align-self: center;
     padding: auto 0px;
     height: 32px;
@@ -75,20 +64,20 @@ button {
     background: #EAEAEA;
     border-radius: 1px;
     margin-right: 20px;
-    margin-left: 20px;
-    }
+}
 
-.company--name{
+.services__title{
     font-size: 28px;
     line-height: 40px;
     margin: 24px 16px 24px 0;
 }
 
-.name-container{
+.services{
     display: flex;
+    justify-content: space-between;
 }
 
-.name-container--highlight{
+.services__highlight{
     background: #41F6D7;
     width: 4px;
     height: 40px;
@@ -96,28 +85,46 @@ button {
     margin:auto 12px auto 0px;
     
 }
-.name-container__part-1{
+.services__block-left{
     display: flex;
 }
 
-.name-container__part-2{
+.services__block-right{
     display: none;
 }
+
+.services__block-right{
+    display: flex;
+}
+
+.services__block-right--icon-description{
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #1B1C21;
+}
+
+.services__block-right--icon{
+    margin-right: 32px;
+}
+
 
 .menu__items{
         display: flex;
         overflow: auto;
         list-style: none;
         margin-left: 0px;
-        margin-bottom: 10px;
-}
-
-.menu__items ul{
-    margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+        height: 44px;
 }
 
 .menu__items li{
-    margin-left: 0px;
+    display: flex;
+   
 }
 .menu__items a{
     text-decoration: none;
@@ -126,71 +133,39 @@ button {
     color: #7E7E82;
     white-space: nowrap;
     margin: auto 16px;
- 
 }
+
 .menu__items a:focus{
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     box-sizing: border-box;
     border-radius: 6px;
     padding: 8px 9px 8px 16px;
+    margin-right: 8px;
+    margin-left: 8px;
     }
 
-.menu__container{
-    display: flex;
-    overflow: auto;
-    margin-bottom: 10px;
-}
 
-.menu--items{
-    font-size: 16px;
-    line-height: 24px;
-    color: #7E7E82;
-    white-space: nowrap;
-    margin: auto 16px;
-    background-color:#F8F8F8 ;
-    border: 0px;
-}
-
-.menu--items:focus{
-background: #FFFFFF;
-border: 2px solid #B8FFEC;
-box-sizing: border-box;
-border-radius: 6px;
-padding: 8px 9px 8px 16px;
-}
-
-.menu--items:first-of-type{
-    display: none;
-}
-
-.first-block{
+.info-block{
     margin: 0 36px 16px 16px;
     padding-top: 0px;
-
 }
 
-
-
-.first-block--description--part-1{
+.info-block__container__activity{
 font-size: 14px;
 line-height: 18px;
 color: #1B1C21;
 }
 
-.first-block--description--part-2{
-    display: none;
-}
-.first-block--description--part-3{
+.invisible-desktop{
     display: none;
 }
 
 .continue-text img {
-    background: #7E7E82;
     width:8px;
-    height: 5px;
-    
+    height: 11px;
 }
+
 .continue-text{
     display: flex;
     font-size: 16px;
@@ -208,20 +183,12 @@ color: #1B1C21;
 
 .continue-text__img-container{
     display: flex;
-    flex-direction: column;
-    margin: auto 16px auto 24px;
-    background-color: #7E7E82;
-
+    margin: auto 16px auto 0px;
+   
 }
 
-.continue-text--img-icons{
-    height: 8px;
-    
-    
-}
-
-.company-img img{ 
-    width: 100%;
+.company-img { 
+    width: 320px;
     
 }
 
@@ -234,89 +201,97 @@ color: #1B1C21;
 }
 
 @media (min-width: 768px) {
-    .first-divider{
-        display: flex;
-    }
-    .first-block--description--part-2{
-        display: inline;
-    }
-.header__container--inner-2-part-1 {
-    display: flex;
-    
-}
-.header__container {
-    justify-content: space-between;}
-
-.first-block__container{
-    padding-top: 20px;
-    line-height: 20px;
+.invisible{
+    display: inline;
 }
 
-.first-block{
+
+.info-block{
     display: inline-block;
     width: 40%;
     vertical-align: top;
+    margin-right: 80px;
 }
 .menu{
     margin-bottom: 10px;
 }
 
+.info-block__container__activity{
+    line-height: 20px;
+}
+.continue-text{
+    margin-top: 10px;
+}
 
 .company-img{
-    margin-top: 20px;
-    display: inline-block;
-    width: 50%;
+
+    margin-top: 20px;    
     justify-content: flex-end;
-    border-radius: 5%;
+    border-radius: 5px;
+    width: 360px;
+    height: 220px;
+    margin-right: 0px;
 }
 
 }
 
 @media (min-width: 1120px){
+    .invisible-desktop{
+        display: inline;
+    }
+
+    .services__block-right{
+        display: flex;
+    }
+    
     .header{
         display: none;
     }
-    .first-block--description--part-3{
-        display: inline;
+
+    .services__highlight{
+        margin-right: 30px;
     }
 
-    .menu--items:first-of-type{
-        display: inline;
-    }
-
-    .menu__container{
+    .menu__items{
+        margin-left: 18px;
         flex-wrap: wrap;
+        height: 80px;
+        
     }
 
-    .name-container__part-2{
-        display: flex;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+
     .icon-description{
 
         font-size: 16px;
         line-height: 24px;
         text-align: left;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #1B1C21;
 
     }
 
-    .name-container{
-        justify-content: space-between;
+    .info-block{
+        margin-left: 32px;
+        margin-bottom: 14px;
     }
 
     .first-block{
-        display: inline-block;
-        width: 40%;
+        display: flex;
+        
         vertical-align: top;
+    }
+
+    .first-block__container{
+        width: 45%;
     }
 
     .company-img{
         margin-top: 20px;
-       
-        width: 55%;
-        justify-content: flex-end;
-        float: right;
+        width: 530px;
+        height: 340px;
+        
+        
     }
 
     .name-container__part-2 .header__container--item:first-of-type{

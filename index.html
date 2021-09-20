@@ -11,61 +11,55 @@
 <body>
     <header class="header">
         <div class="header__container">
-                <div class="header__container--inner-1">
-                <button class="header__container--item" >
-                    <img src="img/burger.png" alt="burger menu">
-                </button>
-                <div class="header__container--divider first-divider"> 
-            </div>
-                <button class="header__container--logo">
-                    <img src="img/logo.png" alt="logo">
-                </button>
-            </div>
-
-            <div class="header__container--inner-2">
-                <div class="header__container--inner-2-part-1">
-                    <button class="header__container--item">
+                <div class="header__container__items--left">
+                        <button class="header__container__item" >
+                            <img src="img/burger.png" alt="burger menu">
+                        </button>
+                        <div class="header__container__divider invisible"> 
+                    </div>
+                        <button class="header__container__logo header__container__item">
+                            <img src="img/logo.png" alt="logo">
+                        </button>
+                    </div>
+                <div class="header__container__items--right">
+                    <button class="header__container__item invisible">
                         <img src="img/call.png" alt="img repair">
                     </button>
-                    <button class="header__container--item">
+                    <button class="header__container__item invisible">
                         <img src="img/chat.png" alt="checkstatus">
                         </button>
-                    <button class="header__container--item">
+                    <button class="header__container__item invisible">
                             <img src="img/profile.png" alt="checkstatus">
                             </button>
+                            <div class="header__container__divider"> 
+                            </div>    
+                        <button class="header__container__item">
+                            <img src="img/repair.png" alt="img repair">
+                        </button>
+                        <button class="header__container__item">
+                            <img src="img/checkstatus.png" alt="checkstatus">
+                            </button>
                     </div>
-
-                <div class="header__container--inner-2-part-2">
-                    <div class="header__container--divider"> 
-                    </div>    
-                <button class="header__container--item">
-                    <img src="img/repair.png" alt="img repair">
-                </button>
-                <button class="header__container--item">
-                    <img src="img/checkstatus.png" alt="checkstatus">
-                    </button>
                 </div>
-            </div>
-        </div>
     </header>
+
     <main>
-        <div class="name-container"> 
-            <div class="name-container__part-1">
-            <div class="name-container--highlight"></div>
-            <h1 class="company--name">Услуги и сервисы</h1>
+        <div class="services"> 
+            <div class="services__block-left">
+            <div class="services__highlight"></div>
+            <h1 class="services__title">Услуги и сервисы</h1>
             </div>
 
-            <div class="name-container__part-2">
-                <h4 class="icon-description">Оставить заявку</h4>
-                <button class="header__container--item">
+            <div class="services__block-right invisible-desktop">
+                <div class="services__block-right--icon-description">Оставить заявку</div>
+                <button class="services__block-right--icon">
                     <img src="img/repair.png" alt="img repair">
                 </button>
-                <h4 class="icon-description">Статус ремонта</h4>
-                <button class="header__container--item">
+                <div class="services__block-right--icon-description">Статус ремонта</div>
+                <button class="services__block-right--icon">
                     <img src="img/checkstatus.png" alt="checkstatus">
                     </button>
-        </div>
-
+            </div>
         </div>
         <nav class="menu">
             <ul class="menu__items">
@@ -78,29 +72,29 @@
                 <li><a href="#">Отзывы</a></li>
                 </ul>
         </nav>
-        <div class="first-block">
-            <div class="first-block__container">
-                <p class="first-block--description--part-1">
+        <div class="info-block">
+            <div class="info-block__container">
+                <p class="info-block__container__activity">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                 Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. 
                 
-    <p class="first-block--description--part-2"> 
+    <p class="invisible"> 
     Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, </p>
-    <span class="first-block--description--part-3" > что подтверждает большое количество постоянных клиентов.
+    <span class="invisible-desktop" > что подтверждает большое количество постоянных клиентов.
      Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
     </span>
-                
             </div>
         
         <div class="continue-text">
             <div class="continue-text__img-container">
-                <img class="continue-text--img-icons" src="img/icon.png " alt= "icon">
+                <img class="continue-text__img-container--icon" src="img/icon.png " alt= "icon">
             </div>
            
             <button class="continue-text--button" > Читать далее </button>
         </div>
         </div>
-        <img class="company-img" src="img/img1.png" alt ="company-img">
+        
+        <img class="company-img" src="img/img-logo.png" alt ="company-img">
             
    
  
