@@ -10,82 +10,82 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__container__items--left">
-          <button class="header__container__item">
-            <img src="img/burger.png" alt="burger menu" />
-          </button>
-          <div class="header__container__divider invisible"></div>
-          <button class="header__container__logo header__container__item">
-            <img src="img/logo.png" alt="logo" />
-          </button>
-        </div>
-        <div class="header__container__items--right">
-          <button class="header__container__item invisible">
-            <img src="img/call.png" alt="img repair" />
-          </button>
-          <button class="header__container__item invisible">
-            <img src="img/chat.png" alt="checkstatus" />
-          </button>
-          <button class="header__container__item invisible">
-            <img src="img/profile.png" alt="checkstatus" />
-          </button>
-          <div class="header__container__divider"></div>
-          <button class="header__container__item">
-            <img src="img/repair.png" alt="img repair" />
-          </button>
-          <button class="header__container__item">
-            <img src="img/checkstatus.png" alt="checkstatus" />
-          </button>
-        </div>
+      <div class="header__block--left">
+        <button class="header__btn">
+          <img src="img/burger.png" alt="burger menu" />
+        </button>
+        <div class="header__divider--invisible"></div>
+        <button class="header__logo header__container__item">
+          <img src="img/logo.png" alt="logo" />
+        </button>
+      </div>
+      <div class="header__block--right">
+        <button class="header__btn--invisible">
+          <img src="img/call.png" alt="img repair" />
+        </button>
+        <button class="header__btn--invisible">
+          <img src="img/chat.png" alt="checkstatus" />
+        </button>
+        <button class="header__btn--invisible">
+          <img src="img/profile.png" alt="checkstatus" />
+        </button>
+        <div class="header__divider"></div>
+        <button class="header__btn">
+          <img src="img/repair.png" alt="img repair" />
+        </button>
+        <button class="header__btn">
+          <img src="img/checkstatus.png" alt="checkstatus" />
+        </button>
       </div>
     </header>
 
     <main>
-      <div class="services">
-        <div class="services__block-left">
-          <div class="services__highlight"></div>
-          <h1 class="services__title">Услуги и сервисы</h1>
-        </div>
+      <div class="main-block">
+        <div class="services">
+          <div class="services__block-left">
+            <div class="services__highlight"></div>
+            <h1 class="services__title">Услуги и сервисы</h1>
+          </div>
 
-        <div class="services__block-right invisible-desktop">
-          <label class="label" for="repair_label"> Оставить заявку </label>
-          <button class="services__block-right--icon" id="service-block">
-            <img src="img/repair.png" alt="img repair" />
-          </button>
-          <label class="label" for="status_label"> Статус ремонта </label>
-          <button class="services__block-right--icon" id="status_label">
-            <img src="img/checkstatus.png" alt="checkstatus" />
-          </button>
+          <div class="services__block-right--invisible">
+            <label class="label" for="repair_label"> Оставить заявку </label>
+            <button class="services__btn" id="repair_label">
+              <img src="img/repair.png" alt="img repair" />
+            </button>
+            <label class="label" for="status_label"> Статус ремонта </label>
+            <button class="services__btn" id="status_label">
+              <img src="img/checkstatus.png" alt="checkstatus" />
+            </button>
+          </div>
         </div>
-      </div>
-      <nav class="menu">
-        <ul class="menu__items">
-          <li><a href="#">Ремонтируемые бренды</a></li>
-          <li><a href="#">Ремонтируемые устройства</a></li>
-          <li><a href="#">Дополнительные услуги</a></li>
-          <li><a href="#">Цены на услуги</a></li>
-          <li><a href="#">Специальные цены</a></li>
-          <li><a href="#">Адреса сервисных центров</a></li>
-          <li><a href="#">Отзывы</a></li>
-        </ul>
-      </nav>
-      <div class="info-block">
-        <div class="info-block__container">
-          <p class="info-block__container__activity">
-            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией производителя.
-          </p>
+        <nav class="menu">
+          <ul class="menu__block">
+            <li class="menu__items"><a class="menu__link" href="#">Ремонтируемые бренды</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Ремонтируемые устройства</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Дополнительные услуги</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Цены на услуги</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Специальные цены</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Адреса сервисных центров</a></li>
+            <li class="menu__items"><a class="menu__link" href="#">Отзывы</a></li>
+          </ul>
+        </nav>
+        <div class="info-block">
+          <div class="info-block__container">
+            <p class="info-block__activity">
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell
+              с официальной гарантией производителя.
+            </p>
 
-          <p class="invisible second-part">
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных
-            клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            <br />
-          </p>
-          <button class="continue-text--button">Читать далее</button>
+            <p class="info-block__second-part--invisible">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных
+              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+              <br />
+            </p>
+            <button class="continue-text__button">Читать далее</button>
+          </div>
+
+          <img class="company-img" src="img/img-logo.png" alt="company-img" />
         </div>
-
-        <img class="company-img" src="img/img-logo.png" alt="company-img" />
       </div>
     </main>
   </body>
