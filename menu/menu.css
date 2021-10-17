@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: 'TT Lakes', sans-serif;
+  font-style: normal;
+  margin: 0px;
+  background: #ffffff;
+}
+button {
+  background: transparent;
+  border: none !important;
+  padding: 0px;
+}
+p {
+  margin: 0;
+}
+.header__container {
+  display: flex;
+  background: #ffffff;
+  height: 88px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.header__logo {
+  border-radius: 50%;
+}
+
+.btn {
+  margin-right: 16px;
+  cursor: pointer;
+  background: transparent;
+}
+.btn:last-of-type {
+  margin-right: 0;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.highlight {
+  position: absolute;
+  background: #41f6d7;
+  width: 4px;
+  height: 40px;
+  border-radius: 0 50% 50% 0;
+  margin: auto 20px auto -24px;
+}
+.menu__container {
+  padding-left: 24px;
+  padding-bottom: 280px;
+}
+.menu__item {
+  margin-right: 24px;
+}
+.menu__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  white-space: nowrap;
+  padding: 16px 0;
+}
+.menu__link:first-of-type {
+  padding-top: 8px;
+}
+.email__link:hover,
+.language__link:hover,
+.btn:hover,
+.phone-number__link:hover,
+.menu__link:hover {
+  transition-duration: 1s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.menu__list {
+  display: block;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.feedback {
+  padding-left: 24px;
+}
+.feedback__block {
+  padding-bottom: 16px;
+}
+
+.email__link {
+  color: #1b1c21;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+
+.phone-number__link {
+  font-weight: bold;
+  color: #1b1c21;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 40px;
+}
+
+.language__list {
+  display: flex;
+  list-style: none;
+}
+.language__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  margin-right: 7px;
+}
+
+.container {
+  width: 320px;
+  box-shadow: 5px 0px 20px 10px rgb(0 0 0 / 30%);
+}
