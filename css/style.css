@@ -15,12 +15,13 @@ body {
   font-family: 'TT Lakes', sans-serif;
   font-style: normal;
   margin: 0px;
+  background: #f8f8f8;
 }
 
 main {
   background: #f8f8f8;
 }
-.main-container {
+.main__container {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -49,23 +50,25 @@ button {
 }
 
 .header__divider--invisible,
-.btn--invisible,
-.title__block--invisible,
-.info__activity--invisible {
+.btn--invisible-mobile,
+.main__activity--invisible-mobile {
   display: none;
 }
 
 .btn {
-  margin-right: 16px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79;
+  align-self: center;
 }
-.btn:last-of-type {
-  margin-right: 0;
+.header__btn {
+  margin-right: 16px;
 }
 
 .header__divider {
   align-self: center;
-  padding: auto 0px;
   height: 32px;
   width: 2px;
   background: #eaeaea;
@@ -73,25 +76,44 @@ button {
   margin-right: 20px;
 }
 
-.title--invisible {
+.header-desktop {
   display: none;
   background: #f8f8f8;
 }
 .tittle {
   background: #f8f8f8;
 }
-.title__name {
+.header-desctop__name {
   font-size: 28px;
   line-height: 40px;
   margin: 24px 16px 24px 0;
 }
 
-.title__container {
+.header-desctop__name::before {
+  position: absolute;
+  content: '';
+  background: #41f6d7;
+  width: 4px;
+  height: 40px;
+  border-radius: 0 50% 50% 0;
+  margin: auto 12px auto -32px;
+}
+
+.header-desctop__container {
   display: flex;
   justify-content: space-between;
   background: #f8f8f8;
 }
 
+.main__title::before {
+  position: absolute;
+  content: '';
+  background: #41f6d7;
+  width: 4px;
+  height: 40px;
+  border-radius: 0 50% 50% 0;
+  margin: auto 12px auto -16px;
+}
 .title__highlight {
   background: #41f6d7;
   width: 4px;
@@ -99,15 +121,11 @@ button {
   border-radius: 0 50% 50% 0;
   margin: auto 12px auto -16px;
 }
-.title__block {
+.header-desctop__block {
   display: flex;
 }
 
-.title__block--invisible {
-  display: none;
-}
-
-.title__btn {
+.header-desctop__btn {
   margin-right: 32px;
   cursor: pointer;
 }
@@ -161,11 +179,7 @@ button {
   margin-left: -18px;
 }
 
-.info {
-  padding-top: 0px;
-}
-
-.info__activity {
+.main__activity {
   font-size: 14px;
   line-height: 18px;
   color: #1b1c21;
@@ -173,7 +187,7 @@ button {
   margin-top: 0;
 }
 
-.text-btn {
+.main__text-btn {
   background: transparent;
   border: none !important;
   color: #1b1c21;
@@ -188,21 +202,21 @@ button {
   cursor: pointer;
 }
 
-.text-btn::before {
-  content: url(' img/icon.png ');
+.main__text-btn::before {
+  content: url('../img/icon.svg ');
   background-image: url('img/icon.png');
   margin: auto 16px auto 0px;
   width: 8px;
   height: 11px;
 }
 
-.company-img {
+.main__info-img {
   width: 110%;
   margin-left: -16px;
 }
 
 @media (min-width: 400px) {
-  .company-img {
+  .main__info-img {
     width: 60%;
     margin-right: 20%;
     margin-left: 20%;
@@ -210,18 +224,29 @@ button {
 }
 @media (min-width: 768px) {
   .header__divider--invisible,
-  .btn--invisible,
-  .info__activity--invisible {
+  .btn--invisible-mobile,
+  .main__activity--invisible-mobile {
     display: inline;
   }
 
-  .main-container {
+  .header__divider--invisible {
+    align-self: center;
+    height: 32px;
+    width: 2px;
+    background: #eaeaea;
+    border-radius: 1px;
+    margin-right: 20px;
+  }
+
+  .main__title::before {
+    margin: auto 12px auto -24px;
+  }
+  .main__container {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .btn--invisible {
+  .btn--invisible-mobile {
     margin-right: 16px;
-    cursor: pointer;
   }
 
   .title__highlight {
@@ -234,36 +259,35 @@ button {
     padding-right: 24px;
   }
 
-  .info {
+  .main__info {
     display: flex;
     vertical-align: top;
     justify-content: space-between;
-    padding-top: 10px;
   }
   .menu__list {
     padding-left: 18px;
   }
-  .info__activity {
+  .main__activity {
     line-height: 20px;
     padding-left: 0px;
     padding-right: 0px;
   }
-  .info__container {
+  .main__description {
     margin-right: 48px;
   }
-  .info__activity--invisible {
+  .main__activity--invisible-mobile {
     display: block;
     height: 16%;
     overflow: hidden;
   }
-  .menu {
+  .main__menu {
     margin-bottom: 10px;
   }
 
   .continue-text__button {
     margin-top: 10px;
   }
-  .company-img {
+  .main__info-img {
     display: flex;
     border-radius: 5px;
     width: 360px;
@@ -274,13 +298,13 @@ button {
 }
 
 @media (min-width: 1120px) {
-  .title--invisible {
+  .header-desktop {
     display: inline;
   }
-
-  .title__block--invisible {
-    display: flex;
+  .main__title {
+    display: none;
   }
+
   .title {
     display: none;
   }
@@ -293,12 +317,12 @@ button {
     margin-right: 30px;
     margin-left: -32px;
   }
-  .title__container {
+  .header-desctop__container {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .title__btn:last-of-type {
+  .header-desctop__btn:last-of-type {
     margin-right: 0px;
   }
   .menu__list {
@@ -306,18 +330,16 @@ button {
     flex-wrap: wrap;
     height: 80px;
   }
-  .main-container {
+  .main__container {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .info {
+  .main__description {
     margin-bottom: 14px;
-  }
-
-  .info__container {
     margin-right: 36px;
   }
+
   .first-block {
     display: flex;
     vertical-align: top;
@@ -326,11 +348,11 @@ button {
   .first-block__container {
     width: 45%;
   }
-  .info__activity--invisible {
+  .main__activity--invisible-mobile {
     display: block;
     height: 25%;
   }
-  .company-img {
+  .main__info-img {
     width: 530px;
     height: 340px;
   }

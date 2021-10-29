@@ -12,76 +12,57 @@
     <header class="header">
       <div class="header__container">
         <div class="header__block">
-          <button class="btn">
-            <img src="img/burger.png" alt="burger menu" />
+          <button class="btn header__btn">
+            <img src="img/burger.svg" alt="бургер меню" />
           </button>
           <div class="header__divider--invisible"></div>
-          <button class="header__logo header__container__item">
-            <img src="img/logo.png" alt="logo" />
+          <button class="header__logo">
+            <img src="img/Group.svg" alt="логотип" />
           </button>
         </div>
         <div class="header__block">
-          <button class="btn--invisible">
-            <img src="img/call.png" alt="img repair" />
+          <button class="btn btn--invisible-mobile">
+            <img src="img/call.svg" alt="телефон" />
           </button>
-          <button class="btn--invisible">
-            <img src="img/chat.png" alt="checkstatus" />
+          <button class="btn btn--invisible-mobile">
+            <img src="img/chat.svg" alt="чат" />
           </button>
-          <button class="btn--invisible">
-            <img src="img/profile.png" alt="checkstatus" />
+          <button class="btn btn--invisible-mobile">
+            <img src="img/profile.svg" alt="профиль" />
           </button>
           <div class="header__divider"></div>
-          <button class="btn">
-            <img src="img/repair.png" alt="img repair" />
+          <button class="btn header__btn">
+            <img src="img/repair.svg" alt="ремонт" />
           </button>
           <button class="btn">
-            <img src="img/checkstatus.png" alt="checkstatus" />
+            <img src="img/checkstatus.svg" alt="проверить статус" />
           </button>
         </div>
       </div>
     </header>
-    <header class="title--invisible">
-      <div class="title__container">
-        <div class="title__block">
-          <div class="title__highlight"></div>
-          <h1 class="title__name">Услуги и сервисы</h1>
+    <header class="header-desktop">
+      <div class="header-desctop__container">
+        <div class="header-desctop__block">
+          <h1 class="header-desctop__name">Услуги и сервисы</h1>
         </div>
 
-        <div class="title__block--invisible">
+        <div class="header-desctop__block">
           <label class="label" for="repair_label"> Оставить заявку </label>
-          <button class="title__btn" id="repair_label">
+          <button class="header-desctop__btn" id="repair_label">
             <img src="img/repair.png" alt="img repair" />
           </button>
           <label class="label" for="status_label"> Статус ремонта </label>
-          <button class="title__btn" id="status_label">
+          <button class="header-desctop__btn" id="status_label">
             <img src="img/checkstatus.png" alt="checkstatus" />
           </button>
         </div>
       </div>
     </header>
 
-    <main>
-      <div class="main-container">
-        <div class="title">
-          <div class="title__container">
-            <div class="title__block">
-              <div class="title__highlight"></div>
-              <h1 class="title__name">Услуги и сервисы</h1>
-            </div>
-
-            <div class="title__block--invisible">
-              <label class="label" for="repair_label"> Оставить заявку </label>
-              <button class="title__btn" id="repair_label">
-                <img src="img/repair.png" alt="img repair" />
-              </button>
-              <label class="label" for="status_label"> Статус ремонта </label>
-              <button class="title__btn" id="status_label">
-                <img src="img/checkstatus.png" alt="checkstatus" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <nav class="menu">
+    <main class="main">
+      <section class="main__container">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <nav class="menu main__menu">
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#">Ремонтируемые бренды</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Ремонтируемые устройства</a></li>
@@ -92,24 +73,24 @@
             <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
           </ul>
         </nav>
-        <div class="info">
-          <div class="info__container">
-            <p class="info__activity">
+        <div class="main__info">
+          <div class="main__description">
+            <p class="main__activity">
               Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell
               с официальной гарантией производителя.
             </p>
 
-            <p class="info__activity--invisible">
+            <p class="main__activity--invisible-mobile">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных
               клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
               <br />
             </p>
-            <button class="text-btn">Читать далее</button>
+            <button class="main__text-btn">Читать далее</button>
           </div>
 
-          <img class="company-img" src="img/img-logo.png" alt="company-img" />
+          <img class="main__info-img" src="img/img-logo.png" alt="изборжение компании" />
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
