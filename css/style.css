@@ -83,13 +83,13 @@ button {
 .tittle {
   background: #f8f8f8;
 }
-.header-desctop__name {
+.header-desktop__name {
   font-size: 28px;
   line-height: 40px;
   margin: 24px 16px 24px 0;
 }
 
-.header-desctop__name::before {
+.header-desktop__name::before {
   position: absolute;
   content: '';
   background: #41f6d7;
@@ -99,7 +99,7 @@ button {
   margin: auto 12px auto -32px;
 }
 
-.header-desctop__container {
+.header-desktop__container {
   display: flex;
   justify-content: space-between;
   background: #f8f8f8;
@@ -121,11 +121,11 @@ button {
   border-radius: 0 50% 50% 0;
   margin: auto 12px auto -16px;
 }
-.header-desctop__block {
+.header-desktop__block {
   display: flex;
 }
 
-.header-desctop__btn {
+.header-desktop__btn {
   margin-right: 32px;
   cursor: pointer;
 }
@@ -317,12 +317,12 @@ button {
     margin-right: 30px;
     margin-left: -32px;
   }
-  .header-desctop__container {
+  .header-desktop__container {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  .header-desctop__btn:last-of-type {
+  .header-desktop__btn:last-of-type {
     margin-right: 0px;
   }
   .menu__list {
